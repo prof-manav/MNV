@@ -261,9 +261,10 @@ main {
   border-radius: 4px;
 }
 
-/* Initials stand in for a portrait. To use a photo, replace the
-   <div class="hero-photo"> with <img class="hero-photo" src="images/photo.jpg" alt="..."> */
+/* Portrait circle: shows photo.jpg / photo.png when present, otherwise the initials. */
 .hero-photo {
+  position: relative;
+  overflow: hidden;
   display: grid;
   place-items: center;
   width: 190px;
@@ -280,6 +281,16 @@ main {
   letter-spacing: 0.02em;
   color: var(--monogram-text);
   user-select: none;
+}
+
+.hero-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 50%;
 }
 
 .hero-name {
@@ -300,13 +311,16 @@ main {
   font-weight: 600;
 }
 
+/* Three buttons per row; a shorter last row stretches to fill the width. */
 .hero-links {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
 .hero-links .button {
+  flex: 1 1 calc((100% - 16px) / 3);
+  min-width: 0;
   padding: 8px 4px;
   font-size: 13px;
   text-align: center;
@@ -314,7 +328,20 @@ main {
 }
 
 .hero-links .button.primary {
-  grid-column: 1 / -1;
+  flex-basis: 100%;
+}
+
+/* Profile buttons without a link yet (e.g. Scholar, Scopus, CV) stay hidden. */
+.hero-links a[href=""],
+.hero-links a:not([href]) {
+  display: none;
+}
+
+.hero-credentials {
+  margin: -10px 0 22px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
 }
 
 .hero-main {
@@ -552,13 +579,40 @@ main {
   border-bottom: 0;
 }
 
-.news-label {
-  padding-top: 3px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.news-date {
+  padding-top: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
   color: var(--accent-gray);
+}
+
+/* ---------- Awards ---------- */
+
+.awards {
+  max-width: var(--measure);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.awards li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.awards li:last-child {
+  border-bottom: 0;
+}
+
+.awards span:last-child {
+  flex-shrink: 0;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .news-older {
@@ -640,10 +694,35 @@ main {
   border: 1px solid var(--red-rule);
 }
 
+.pub-status {
+  padding: 0 7px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
+.pub-status.ok {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .pub-authors {
   margin-top: 8px;
   font-size: 15px;
   line-height: 1.55;
+}
+
+.pub-note {
+  margin-top: 2px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--text-soft);
 }
 
 .pub-authors .me {
@@ -799,6 +878,56 @@ main {
   color: var(--muted);
 }
 
+.entry-blurb em {
+  color: var(--text-soft);
+}
+
+/* Talks: one title, then every place it was given. */
+.venues {
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.venues li {
+  position: relative;
+  margin: 0;
+  padding: 3px 0 3px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+
+.venues li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.85em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: var(--measure);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip-list li {
+  margin: 0;
+  padding: 4px 12px;
+  font-size: 14px;
+  color: var(--text-soft);
+  background: var(--pale);
+  border-radius: 3px;
+}
+
 /* Briefly mark the item a deep link points to. */
 .pubs li:target,
 .entries > li:target {
@@ -833,16 +962,21 @@ main {
   list-style: none;
 }
 
-.repo {
-  font-family: var(--mono);
-  font-size: 14px;
-  color: var(--text);
+/* Structured lists inside content pages manage their own spacing. */
+.content .entries,
+.content .news,
+.content .chip-list,
+.content .venues {
+  padding-left: 0;
 }
 
-.item-note {
-  display: block;
-  font-size: 14px;
-  color: var(--muted);
+.content .entries > li,
+.content .news li {
+  margin-bottom: 0;
+}
+
+.content .entries {
+  margin-bottom: 8px;
 }
 
 /* ---------- Footer ---------- */
@@ -969,6 +1103,11 @@ main {
   }
 
   .entry-where {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .awards li {
     flex-direction: column;
     gap: 0;
   }

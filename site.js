@@ -10,8 +10,11 @@
   // ---------- Hash routing ----------
   // "#research" shows a page; "#fanformer" shows the page that contains
   // that element and scrolls to it, so old deep links keep working.
+  // Old section names that moved, so earlier links keep working.
+  var aliases = { research: "publications" };
+
   function resolve(hash) {
-    var id = hash || "home";
+    var id = aliases[hash] || hash || "home";
     var page = null;
     var anchor = null;
 
@@ -76,6 +79,18 @@
       link.setAttribute("aria-disabled", "true");
       link.title = link.textContent.trim() + " link coming soon";
     } else {
+      link.target = "_blank";
+      link.rel = "noopener";
+    }
+  });
+
+  // ---------- Profile buttons ----------
+  // Empty ones (no link pasted in yet) are removed; external ones open in a new tab.
+  document.querySelectorAll(".hero-links a").forEach(function (link) {
+    var href = (link.getAttribute("href") || "").trim();
+    if (!href || href === "#") {
+      link.remove();
+    } else if (/^https?:/i.test(href)) {
       link.target = "_blank";
       link.rel = "noopener";
     }

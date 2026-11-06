@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Muktinath Vishwakarma</title>
-    <meta name="description" content="Muktinath Vishwakarma is an AI researcher working on multi-step time series forecasting, generative AI, and graph learning.">
+    <meta name="description" content="Muktinath Vishwakarma is a Ph.D. scholar in Computer Science and Engineering at VNIT Nagpur, working on generative AI and its applications in time series data analysis.">
     <meta name="author" content="Muktinath Vishwakarma">
     <meta property="og:title" content="Muktinath Vishwakarma">
-    <meta property="og:description" content="AI researcher working on multi-step time series forecasting, generative AI, and graph learning.">
+    <meta property="og:description" content="Ph.D. scholar at VNIT Nagpur working on generative AI and time series data analysis.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://prof-manav.github.io/my-website/">
+    <meta property="og:url" content="https://prof-manav.github.io/MNV/">
+    <meta property="og:image" content="https://prof-manav.github.io/MNV/photo.jpg">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,9 +37,9 @@
         <a class="site-brand" href="#home">Muktinath Vishwakarma</a>
         <nav class="site-nav" aria-label="Main">
           <a href="#home">Home</a>
-          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
           <a href="#talks">Talks</a>
-          <a href="#education">Education</a>
+          <a href="#cv">CV</a>
           <a href="#misc">Misc</a>
         </nav>
       </div>
@@ -53,35 +54,44 @@
 
         <div class="hero">
           <aside class="hero-card">
-            <div class="hero-photo" role="img" aria-label="Muktinath Vishwakarma">MV</div>
+            <!-- Photo: upload photo.jpg (or photo.png) next to index.html. Until it exists, the initials show. -->
+            <div class="hero-photo">
+              <span aria-hidden="true">MV</span>
+              <img src="photo.jpg" alt="Portrait of Muktinath Vishwakarma"
+                   onerror="if (!this.dataset.tried) { this.dataset.tried = '1'; this.src = 'photo.png'; } else { this.remove(); }">
+            </div>
             <h1 class="hero-name">Muktinath Vishwakarma</h1>
             <p class="hero-role">
-              <strong>AI Researcher &middot; Ph.D. Scholar</strong><br>
-              Computer Science &amp; Engineering<br>
+              <strong>Ph.D. Scholar, Computer Science &amp; Engineering</strong><br>
               VNIT Nagpur, India
             </p>
+            <p class="hero-credentials">M.Tech. IIT Kanpur &middot; UGC JRF-NET &middot; MIEEE &middot; MACM</p>
+            <!-- Profile buttons. A button with an empty href stays hidden until you paste its link in. -->
             <div class="hero-links">
-              <a class="button primary" href="#research">Research</a>
-              <a class="button" href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="button" href="#talks">Talks</a>
-              <a class="button" href="#contact">Contact</a>
+              <a class="button primary" href="#publications">Publications</a>
+              <a class="button" href="https://www.linkedin.com/in/muktinathv/">LinkedIn</a>
+              <a class="button" href="https://scholar.google.com/citations?user=fyuVvJgAAAAJ&amp;hl=en">Scholar</a>
+              <a class="button" href="mailto:muktinathv@gmail.com">Email</a>
+              <a class="button" href="https://orcid.org/0009-0008-4547-8936">ORCID</a>
+              <a class="button" href="https://www.scopus.com/authid/detail.uri?authorId=58884062100">Scopus</a>
+              <a class="button" href="">CV</a>
             </div>
           </aside>
 
           <div class="hero-main">
             <div class="hero-bio">
-              <p class="hero-lead">I work on <strong>multi-step time series forecasting</strong>, <strong>generative AI</strong>, and <strong>graph learning</strong>, with a focus on forecasts that stay stable over long horizons.</p>
-              <p>My models combine frequency-domain priors, recurrent and Transformer encoders, and physics-informed constraints, and I test them on aluminium and other commodity price series. I also work on anomaly detection and retrieval-augmented generation.</p>
+              <p class="hero-lead">I am a Ph.D. scholar at VNIT Nagpur working on <strong>generative artificial intelligence</strong> and its applications in <strong>time series data analysis</strong>.</p>
+              <p>My papers cover multi-step forecasting with graph neural networks, commodity and agricultural price forecasting, financial risk and trading, and interpretable models for engineering data. Before my Ph.D., I spent more than eight years teaching Computer Science, Mathematics, and competitive-examination preparation.</p>
             </div>
 
-            <p class="callout"><strong>Currently</strong> pursuing a Ph.D. in Computer Science, building multi-step forecasting frameworks that fuse Fourier, LSTM, and Transformer modules with physics-informed constraints.</p>
-            <p class="callout red"><strong>Collaboration and talks.</strong> I am happy to hear about research collaborations and speaking invitations. The best way to reach me is on <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+            <p class="callout"><strong>Currently</strong> pursuing a Ph.D. in Computer Science and Engineering at VNIT Nagpur under the supervision of <strong>Prof. Manish P. Kurhekar</strong> (January 2024 &ndash; January 2027, expected).</p>
+            <p class="callout red"><strong>Teaching and guest lectures.</strong> I have taught undergraduate Computer Science and given guest lectures on algorithms, complexity theory, and GATE preparation at engineering colleges in Nagpur and Chandrapur. Invitations are welcome at <a href="mailto:muktinathv@gmail.com">muktinathv@gmail.com</a>.</p>
 
             <details class="toggle bio-toggle">
               <summary>Brief bio</summary>
               <div class="toggle-body">
-                <p>Muktinath Vishwakarma is an AI researcher and Ph.D. scholar in Computer Science and Engineering at VNIT Nagpur, India. The research centres on multi-step forecasting: multi-scale fusion Transformers, Fourier&ndash;LSTM hybrids with direct multi-output heads, and Ornstein&ndash;Uhlenbeck mean-reversion priors that curb drift at long horizons, benchmarked on aluminium and multi-metal price panels.</p>
-                <p>Other interests include Temporal Fusion Transformers, Kolmogorov&ndash;Arnold networks, graph neural networks, anomaly detection, and retrieval-augmented generation for legal documents.</p>
+                <p>Muktinath Vishwakarma is a Ph.D. scholar in Computer Science and Engineering at Visvesvaraya National Institute of Technology (VNIT), Nagpur, supervised by Prof. Manish P. Kurhekar. The research focuses on generative artificial intelligence and its applications in time series data analysis, with papers on graph neural networks for multi-step forecasting, agricultural and commodity price forecasting, expected-shortfall forecasting, reinforcement-learning trading, and interpretable models for concrete and slope-stability data.</p>
+                <p>Muktinath holds an M.Tech. in Computer Science and Engineering from IIT Kanpur and a B.E. in Computer Science and Engineering from Rashtrasant Tukadoji Maharaj Nagpur University, and qualified UGC JRF and NET in 2016. Before joining VNIT, Muktinath was a Teaching Assistant Professor at Symbiosis Institute of Technology, Nagpur, and Director of The Altius Classes, Nagpur, bringing more than eight years of teaching experience.</p>
               </div>
             </details>
           </div>
@@ -96,101 +106,109 @@
           <h2 class="section-label">Core Research Themes</h2>
           <ol class="themes">
             <li>
-              <h3>Multi-Scale and Frequency-Aware Forecasting</h3>
-              <p>Fusing frequency-domain priors with hierarchical temporal encoders and direct multi-output heads, so that long-horizon forecasts accumulate less error. This covers <a href="#msf-transformer">MSF-Transformer</a> and <a href="#fanformer">FANformer</a>.</p>
+              <h3>Multi-Step and Long-Term Forecasting</h3>
+              <p>Graph neural networks built around a target series (<a href="#resnode-gcn">ResNode-GCN</a>, <a href="#tir-gnn">target-indexed residual GNNs</a>), <a href="#calendar-rank">low-rank calendar priors</a> for parameter-efficient long-term forecasting, and <a href="#lh-fus">feature selection</a> that depends on both lookback and horizon.</p>
             </li>
             <li>
-              <h3>Physics-Informed Constraints</h3>
-              <p>Injecting Ornstein&ndash;Uhlenbeck mean-reversion priors into deep sequence models to regularise long-horizon drift in commodity price series (<a href="#pinn-ou">details</a>).</p>
+              <h3>Agricultural and Commodity Prices</h3>
+              <p>Multi-market potato price forecasting: a <a href="#mswc-loss">structure-aware wavelet-curvature loss</a>, <a href="#kan-potato">Kolmogorov&ndash;Arnold networks with geographic priors</a>, and a study of <a href="#potato-forecastability">how forecastable weekly prices are</a> relative to persistence.</p>
             </li>
             <li>
-              <h3>Anomaly Detection in Time Series</h3>
-              <p>Organising statistical, machine-learning, and Transformer-based detectors by setting: univariate or multivariate, streaming or batch, reconstruction or prediction (<a href="#anomaly-detection">survey</a>).</p>
+              <h3>Financial Risk and Trading</h3>
+              <p><a href="#day-trading-rl">Reinforcement-learning day trading</a> with attention-LSTM, CNN, and explainable state modelling, and <a href="#es-tail">expected-shortfall forecasting</a> with local tail adaptation.</p>
+            </li>
+            <li>
+              <h3>Interpretable Machine Learning for Engineering</h3>
+              <p><a href="#concrete-nam">Hydration-curve neural additive models</a> for concrete strength and <a href="#slope-xgboost">physics-guided, cost-sensitive XGBoost</a> for slope-stability classification.</p>
             </li>
           </ol>
 
-          <button class="scroll-cue" type="button" data-target="latest" aria-label="Scroll to Latest Updates">
+          <button class="scroll-cue" type="button" data-target="recent-news" aria-label="Scroll to Recent News">
             <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
         </div>
 
-        <!-- Latest updates -->
-        <div class="section" id="latest">
-          <h2 class="section-label">Latest Updates</h2>
+        <!-- News -->
+        <div class="section" id="recent-news">
+          <h2 class="section-label">Recent News</h2>
           <ul class="news">
-            <li><span class="news-label">Research</span><span><a href="#msf-transformer">MSF-Transformer</a>: multi-scale fusion with frequency-domain priors for aluminium price forecasting, compared against TFT and VAR. Preprint in draft.</span></li>
-            <li><span class="news-label">Research</span><span><a href="#fanformer">FANformer</a>: learnable frequency filters fused with stacked LSTMs and direct multi-output heads, benchmarked on aluminium and multi-metal panels. Working paper.</span></li>
-            <li><span class="news-label">Research</span><span><a href="#pinn-ou">Physics-informed mean reversion</a>: OU-based regularisation that curbs long-horizon drift in commodity prices. In preparation.</span></li>
-            <li><span class="news-label">Talk</span><span><a href="#fdp-genai">Generative AI for Faculty Development</a>: Transformers, Hugging Face workflows, prompt safety, and evaluation in classrooms.</span></li>
-            <li><span class="news-label">Talk</span><span><a href="#temporal-commodity">Temporal Models for Commodity Markets</a>: direct multi-step strategies, error&ndash;horizon trade-offs, and practical benchmarking.</span></li>
+            <li><span class="news-date">2026</span><span><a href="#day-trading-rl">Our paper</a> on reinforcement-learning day trading with attention-LSTM, CNN, and explainable state modelling is published in the <em>International Journal of Machine Learning and Cybernetics</em>.</span></li>
+            <li><span class="news-date">2026</span><span><a href="#mswc-loss">MSWC-Loss</a>, a multi-scale wavelet-curvature loss for potato price forecasting, is accepted in <em>Potato Research</em>.</span></li>
+            <li><span class="news-date">2026</span><span><a href="#kan-potato">Our paper</a> on parameter-efficient multi-market potato price forecasting with Kolmogorov&ndash;Arnold networks is accepted in the <em>IETE Journal of Research</em>.</span></li>
+            <li><span class="news-date">2026</span><span>Minor revisions submitted for <a href="#resnode-gcn">ResNode-GCN</a> (<em>Applied Soft Computing</em>) and <a href="#slope-xgboost">physics-guided XGBoost for slope stability</a> (<em>IETE Journal of Research</em>).</span></li>
+            <li><span class="news-date">Jan 2024</span><span>Started my Ph.D. at VNIT Nagpur under Prof. Manish P. Kurhekar.</span></li>
           </ul>
 
           <details class="toggle news-older">
-            <summary>More updates</summary>
+            <summary>Older news</summary>
             <ul class="news">
-              <li><span class="news-label">Talk</span><span><a href="#rag-legal">RAG Systems for Legal Document Retrieval</a>: ANN indexing (Annoy/FAISS), recall@K optimisation, and citation-aware re-ranking.</span></li>
-              <li><span class="news-label">Notes</span><span><a href="#reading-notes">Reading notes on TFT and KAN</a>: Temporal Fusion Transformer internals and KAN operators for interpretable nonlinearity.</span></li>
-              <li><span class="news-label">Code</span><span><a href="#open-source">Open-source scaffolds</a> for aluminium time series benchmarks and FANformer experiments.</span></li>
+              <li><span class="news-date">Oct 2022</span><span>Joined Symbiosis Institute of Technology, Nagpur, as a Teaching Assistant Professor.</span></li>
+              <li><span class="news-date">Jul 2016</span><span>Qualified UGC JRF and NET.</span></li>
+              <li><span class="news-date">2015</span><span>Became Director of The Altius Classes, Nagpur (until 2022).</span></li>
+              <li><span class="news-date">Dec 2015</span><span>Completed my M.Tech. in Computer Science and Engineering at IIT Kanpur.</span></li>
+              <li><span class="news-date">2013</span><span>All India Rank 827 in GATE 2013.</span></li>
             </ul>
           </details>
 
-          <button class="scroll-cue" type="button" data-target="at-a-glance" aria-label="Scroll to At a Glance">
+          <button class="scroll-cue" type="button" data-target="selected-awards" aria-label="Scroll to Honours and Awards">
             <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
         </div>
 
-        <!-- At a glance -->
-        <div class="section" id="at-a-glance">
-          <h2 class="section-label">At a Glance</h2>
-          <ul class="news facts">
-            <li><span class="news-label">Interests</span><span>Multi-step forecasting, Temporal Fusion Transformers, KAN, PINNs, GNNs, RAG</span></li>
-            <li><span class="news-label">Methods</span><span>PyTorch, Darts, Optuna, VAR/ARIMA</span></li>
-            <li><span class="news-label">Domains</span><span>Aluminium and commodity prices, anomaly detection</span></li>
-            <li><span class="news-label">Location</span><span>Nagpur, India</span></li>
+        <!-- Awards -->
+        <div class="section" id="selected-awards">
+          <h2 class="section-label">Honours and Awards</h2>
+          <ul class="awards">
+            <li><span>Qualified UGC Junior Research Fellowship (JRF) and National Eligibility Test (NET)</span><span>2016</span></li>
+            <li><span>All India Rank 827 in GATE, among about 2.25 lakh candidates</span><span>2013</span></li>
+            <li><span>Honourable Mention, ACM-ICPC Kanpur Regional (online prelims and onsite contest)</span><span>2011</span></li>
+            <li><span>Second Position, Avishkar inter-college research festival (RTM Nagpur University), Engineering and Technology, for &ldquo;Intelligent Power Grid System&rdquo;</span><span>2011</span></li>
+            <li><span>Honourable Mention, ACM-ICPC Amritapuri Regional (online prelims and onsite contest)</span><span>2010</span></li>
+            <li><span>Best Technical Project Award, Persistent Systems, for &ldquo;Design and Implementation of Efficient Web Crawler&rdquo;</span><span></span></li>
+            <li><span>Winner of national-level college programming competitions, including TopCoder, Battle of Code Professional, and C-ON-TEST</span><span></span></li>
           </ul>
         </div>
       </section>
 
       <!-- ================================================================
-           Research
+           Publications
+           Each paper has a Paper / Code / Data bar: paste a URL between the
+           quotes. An empty link shows as a dimmed "soon" button.
            ================================================================ -->
-      <section class="page" data-page="research" aria-labelledby="research-title">
-        <h1 class="page-title" id="research-title" tabindex="-1">Research</h1>
+      <section class="page" data-page="publications" aria-labelledby="publications-title">
+        <h1 class="page-title" id="publications-title" tabindex="-1">Publications</h1>
 
         <div class="pubs">
-          <h2>Papers and Preprints</h2>
+          <h2>Journal Papers</h2>
           <ul>
-            <li id="msf-transformer">
-              <div class="pub-title">MSF-Transformer: A Multi-Scale Fusion Transformer for Multi-Step Forecasting of Aluminium Prices</div>
-              <div class="pub-meta"><span class="pub-venue">Preprint (draft)</span><span class="pub-venue">20XX</span></div>
-              <div class="pub-blurb">A multi-scale fusion backbone that blends frequency-domain priors with hierarchical temporal encoders to stabilise long-horizon predictions and reduce error accumulation.</div>
-              <ul class="pub-tags"><li>Transformer</li><li>Fourier</li><li>Time Series</li><li>MIMO</li></ul>
+            <li id="day-trading-rl">
+              <div class="pub-title"><a href="https://doi.org/10.1007/s13042-026-03298-9" target="_blank" rel="noopener">Optimized day trading via reinforcement learning and technical analysis using attention-LSTM, CNN, and explainable state modeling</a></div>
+              <div class="pub-meta"><span class="pub-venue">IJMLC 2026</span><span class="pub-status ok">Published</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span>, Jagdish Chakole, and Manish Kurhekar</div>
+              <div class="pub-note">International Journal of Machine Learning and Cybernetics, Springer Nature</div>
               <div class="pub-links">
-                <!-- Paste a URL between the quotes. An empty link shows as "soon" and can't be clicked. -->
-                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link paper" href="https://doi.org/10.1007/s13042-026-03298-9">Paper</a>
                 <a class="pub-link code" href="">Code</a>
                 <a class="pub-link data" href="">Data</a>
               </div>
             </li>
-            <li id="fanformer">
-              <div class="pub-title">FANformer: A Unified Fourier and LSTM-based Framework for Long-Range Forecasting</div>
-              <div class="pub-meta"><span class="pub-venue">Working paper</span><span class="pub-venue">20XX</span></div>
-              <div class="pub-blurb">Combines learnable frequency filters with LSTM temporal blocks and direct multi-output heads, benchmarked against VAR/ARIMA, TFT, and Darts baselines.</div>
-              <ul class="pub-tags"><li>LSTM</li><li>Fourier</li><li>Direct MIMO</li></ul>
+            <li id="mswc-loss">
+              <div class="pub-title"><a href="https://doi.org/10.1007/s11540-026-10170-4" target="_blank" rel="noopener">MSWC-Loss: Multi-Scale Wavelet-Curvature Loss for Structure-Aware Potato Price Forecasting</a></div>
+              <div class="pub-meta"><span class="pub-venue">Potato Research 2026</span><span class="pub-status ok">Accepted</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">Potato Research, Springer Nature</div>
               <div class="pub-links">
-                <!-- Paste a URL between the quotes. An empty link shows as "soon" and can't be clicked. -->
-                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link paper" href="https://doi.org/10.1007/s11540-026-10170-4">Paper</a>
                 <a class="pub-link code" href="">Code</a>
                 <a class="pub-link data" href="">Data</a>
               </div>
             </li>
-            <li id="pinn-ou">
-              <div class="pub-title">Physics-Informed Forecasting with Mean-Reversion Constraints</div>
-              <div class="pub-meta"><span class="pub-venue">In preparation</span><span class="pub-venue">20XX</span></div>
-              <div class="pub-blurb">Injects Ornstein&ndash;Uhlenbeck priors into deep sequence models to regularise long-horizon drift, improving stability on aluminium price series.</div>
-              <ul class="pub-tags"><li>PINN</li><li>OU Process</li><li>Stability</li></ul>
+            <li id="kan-potato">
+              <div class="pub-title">Parameter-Efficient and Interpretable Multi-Market Potato Price Forecasting with Geographic Priors and Kolmogorov-Arnold Networks</div>
+              <div class="pub-meta"><span class="pub-venue">IETE JR 2026</span><span class="pub-status ok">Accepted</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">IETE Journal of Research</div>
               <div class="pub-links">
-                <!-- Paste a URL between the quotes. An empty link shows as "soon" and can't be clicked. -->
                 <a class="pub-link paper" href="">Paper</a>
                 <a class="pub-link code" href="">Code</a>
                 <a class="pub-link data" href="">Data</a>
@@ -198,15 +216,102 @@
             </li>
           </ul>
 
-          <h2>Surveys</h2>
+          <h2>Manuscripts Under Review</h2>
           <ul>
-            <li id="anomaly-detection">
-              <div class="pub-title">Anomaly Detection in Time Series: A Comprehensive Review</div>
-              <div class="pub-meta"><span class="pub-venue">Survey (draft)</span><span class="pub-venue">20XX</span></div>
-              <div class="pub-blurb">A taxonomy of statistical, machine-learning, and Transformer-based anomaly detectors: univariate vs. multivariate, streaming vs. batch, and reconstruction vs. predictive paradigms.</div>
-              <ul class="pub-tags"><li>Survey</li><li>Anomaly Detection</li></ul>
+            <li id="resnode-gcn">
+              <div class="pub-title">ResNode-GCN: Target-Centric Residual Graph Neural Networks for Multi-Step Commodity Price Forecasting</div>
+              <div class="pub-meta"><span class="pub-venue">Applied Soft Computing</span><span class="pub-status">Minor revision submitted</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span>, Manish Kurhekar, and Jagdish Chakole</div>
+              <div class="pub-note">Applied Soft Computing, Elsevier &middot; submitted 2025</div>
               <div class="pub-links">
-                <!-- Paste a URL between the quotes. An empty link shows as "soon" and can't be clicked. -->
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="slope-xgboost">
+              <div class="pub-title">Physics-Guided and Cost-Sensitive XGBoost for Reinforcement-Aware Slope Stability Classification</div>
+              <div class="pub-meta"><span class="pub-venue">IETE JR</span><span class="pub-status">Minor revision submitted</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">IETE Journal of Research &middot; submitted 2026</div>
+              <div class="pub-links">
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="concrete-nam">
+              <div class="pub-title">Knowledge-Guided Hydration-Curve Neural Additive Models for Interpretable Concrete Strength Prediction</div>
+              <div class="pub-meta"><span class="pub-venue">EAAI</span><span class="pub-status">Under review</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">Engineering Applications of Artificial Intelligence, Elsevier &middot; submitted 2026</div>
+              <div class="pub-links">
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="calendar-rank">
+              <div class="pub-title">How much calendar rank does multivariate forecasting need? A low-rank calendar prior for parameter-efficient long-term forecasting</div>
+              <div class="pub-meta"><span class="pub-venue">ESWA</span><span class="pub-status">Under review</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">Expert Systems with Applications, Elsevier &middot; submitted 2026</div>
+              <div class="pub-links">
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="es-tail">
+              <div class="pub-title">Volatility Is Not Enough: Local Tail Adaptation for Expected Shortfall Forecasting</div>
+              <div class="pub-meta"><span class="pub-venue">J. Forecasting</span><span class="pub-status">Under review</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">Journal of Forecasting, Wiley &middot; submitted 2026</div>
+              <div class="pub-links">
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="lh-fus">
+              <div class="pub-title">Beyond Static Feature Importance: Lookback&ndash;Horizon Forecast Utility Selection for Multi-Horizon Time-Series Forecasting</div>
+              <div class="pub-meta"><span class="pub-venue">IEEE Access</span><span class="pub-status">Under review</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">IEEE Access &middot; submitted 2026</div>
+              <div class="pub-links">
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="tir-gnn">
+              <div class="pub-title">Target-Indexed Residual Graph Neural Networks: A Backbone-Agnostic Framework for Target-Centric Time-Series Forecasting</div>
+              <div class="pub-meta"><span class="pub-venue">IEEE TNNLS</span><span class="pub-status">Under review</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">IEEE Transactions on Neural Networks and Learning Systems &middot; submitted 2026</div>
+              <div class="pub-links">
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="sra-egait">
+              <div class="pub-title">SRA-EGait: Sequential Risk-Aware Event-Gait Authentication via Value-of-Information Reacquisition</div>
+              <div class="pub-meta"><span class="pub-venue">IEEE T-BIOM</span><span class="pub-status">Under review</span></div>
+              <div class="pub-authors">Devendra Nagar, <span class="me">Muktinath Vishwakarma</span>, and Manish Kurhekar</div>
+              <div class="pub-note">IEEE Transactions on Biometrics, Behavior, and Identity Science &middot; submitted 2026</div>
+              <div class="pub-links">
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="potato-forecastability">
+              <div class="pub-title">Beyond Persistence: Understanding Forecastability of Weekly Potato Prices Across Multiple Market Centres</div>
+              <div class="pub-meta"><span class="pub-venue">Potato Research</span><span class="pub-status">Under review</span></div>
+              <div class="pub-authors"><span class="me">Muktinath Vishwakarma</span> and Manish Kurhekar</div>
+              <div class="pub-note">Potato Research, Springer Nature &middot; submitted 2026</div>
+              <div class="pub-links">
                 <a class="pub-link paper" href="">Paper</a>
                 <a class="pub-link code" href="">Code</a>
                 <a class="pub-link data" href="">Data</a>
@@ -220,52 +325,154 @@
            Talks
            ================================================================ -->
       <section class="page" data-page="talks" aria-labelledby="talks-title">
-        <h1 class="page-title" id="talks-title" tabindex="-1">Invited Talks</h1>
-        <ul class="entries">
-          <li id="fdp-genai">
-            <h2 class="entry-title">Generative AI for Faculty Development</h2>
-            <div class="entry-where"><span>FDP Session &middot; IIT/Institute, India</span><span class="entry-date">20XX</span></div>
-            <p class="entry-blurb">Introduced transformer tooling, Hugging Face workflows, safety considerations, and hands-on demos.</p>
+        <h1 class="page-title" id="talks-title" tabindex="-1">Talks and Guest Lectures</h1>
+        <ul class="entries talks">
+          <li id="talk-gate">
+            <h2 class="entry-title">How to Prepare for GATE</h2>
+            <ul class="venues">
+              <li>GATE Club, Department of Computer Technology, YCCE, Nagpur</li>
+              <li>GATE Club, Department of Computer Science and Engineering, RGCER, Nagpur</li>
+              <li>Department of Computer Science and Information Technology, Priyadarshini College, Nagpur</li>
+              <li>Department of Computer Technology and Information Technology, Rajiv Gandhi College of Engineering, Research and Technology, Chandrapur</li>
+            </ul>
           </li>
-          <li id="temporal-commodity">
-            <h2 class="entry-title">Temporal Models for Commodity Markets</h2>
-            <div class="entry-where"><span>Seminar &middot; University/Industry Lab</span><span class="entry-date">20XX</span></div>
-            <p class="entry-blurb">Covered direct multi-step strategies, horizon-wise error patterns, and empirical benchmarking with Optuna.</p>
+          <li id="talk-career-gate">
+            <h2 class="entry-title">Career Guidance and GATE Preparation</h2>
+            <ul class="venues">
+              <li>Department of Computer Science and Engineering and Information Technology, Wainganga College of Engineering and Management, Nagpur</li>
+            </ul>
           </li>
-          <li id="rag-legal">
-            <h2 class="entry-title">RAG Systems for Legal Document Retrieval</h2>
-            <div class="entry-where"><span>Workshop &middot; Tech Meetup</span><span class="entry-date">20XX</span></div>
-            <p class="entry-blurb">Demonstrated ANN indexing (Annoy/FAISS), recall@K optimisation, and citation-aware re-ranking.</p>
+          <li id="talk-daa-gate">
+            <h2 class="entry-title">Design and Analysis of Algorithms for GATE</h2>
+            <ul class="venues">
+              <li>GATE Club, Department of Computer Technology, YCCE, Nagpur</li>
+            </ul>
           </li>
-          <li id="dl-review">
-            <h2 class="entry-title">Deep Learning for Time Series: From LSTMs to Transformers</h2>
-            <div class="entry-where"><span>Guest Lecture</span><span class="entry-date">20XX</span></div>
-            <p class="entry-blurb">A survey of architectures with their pros and cons, dataset curation, and robust evaluation protocols.</p>
+          <li id="talk-aoa">
+            <h2 class="entry-title">Analysis of Algorithms</h2>
+            <ul class="venues">
+              <li>Department of Computer Science and Engineering, RGCER, Nagpur</li>
+            </ul>
+          </li>
+          <li id="talk-complexity">
+            <h2 class="entry-title">Complexity Theory</h2>
+            <ul class="venues">
+              <li>Department of Information Technology, RGCER, Nagpur</li>
+            </ul>
           </li>
         </ul>
       </section>
 
       <!-- ================================================================
-           Education
+           CV
            ================================================================ -->
-      <section class="page" data-page="education" aria-labelledby="education-title">
-        <h1 class="page-title" id="education-title" tabindex="-1">Education</h1>
+      <section class="page content" data-page="cv" aria-labelledby="cv-title">
+        <h1 class="page-title" id="cv-title" tabindex="-1">Curriculum Vitae</h1>
+
+        <h2 id="experience">Experience</h2>
         <ul class="entries">
-          <li id="phd">
-            <h2 class="entry-title">Ph.D. in Computer Science (Ongoing)</h2>
-            <div class="entry-where"><span>Focus: Time Series Forecasting, Generative AI</span><span class="entry-date">20XX&ndash;Present</span></div>
-            <p class="entry-blurb">Exploring multi-step forecasting frameworks that fuse Fourier, LSTM, and Transformer modules with physics-informed constraints.</p>
+          <li>
+            <h3 class="entry-title">Researcher (Ph.D. Scholar)</h3>
+            <div class="entry-where"><span>Visvesvaraya National Institute of Technology, Nagpur</span><span class="entry-date">Jan 2024 &ndash; present</span></div>
           </li>
-          <li id="masters">
-            <h2 class="entry-title">M.Tech / M.S. in Computer Science</h2>
-            <div class="entry-where"><span>Specialisation: Machine Learning</span><span class="entry-date">20XX</span></div>
-            <p class="entry-blurb">Thesis on deep sequence models for financial time series; coursework in deep learning, NLP, and advanced algorithms.</p>
+          <li>
+            <h3 class="entry-title">Teaching Assistant Professor</h3>
+            <div class="entry-where"><span>Symbiosis Institute of Technology, Nagpur</span><span class="entry-date">Oct 2022 &ndash; Dec 2023</span></div>
           </li>
-          <li id="btech">
-            <h2 class="entry-title">B.Tech in Computer Science</h2>
-            <div class="entry-where"><span>Undergraduate research: Forecasting &amp; Data Mining</span><span class="entry-date">20XX</span></div>
-            <p class="entry-blurb">Built early forecasting pipelines and dashboards for metal prices and macro indicators.</p>
+          <li>
+            <h3 class="entry-title">Director and Teacher</h3>
+            <div class="entry-where"><span>The Altius Classes, Nagpur</span><span class="entry-date">2015 &ndash; 2022</span></div>
           </li>
+          <li>
+            <h3 class="entry-title">Teaching Assistant</h3>
+            <div class="entry-where"><span>Indian Institute of Technology Kanpur</span><span class="entry-date">Jul 2013 &ndash; Jun 2015</span></div>
+          </li>
+        </ul>
+
+        <h2 id="education">Education</h2>
+        <ul class="entries">
+          <li>
+            <h3 class="entry-title">Ph.D., Computer Science and Engineering</h3>
+            <div class="entry-where"><span>Visvesvaraya National Institute of Technology, Nagpur</span><span class="entry-date">Jan 2024 &ndash; Jan 2027 (expected)</span></div>
+            <p class="entry-blurb">Thesis: <em>Generative Artificial Intelligence and its Application in Time Series Data Analysis</em><br>Supervisor: Prof. Manish P. Kurhekar &middot; Coursework CGPA 9.50 / 10</p>
+          </li>
+          <li>
+            <h3 class="entry-title">M.Tech., Computer Science and Engineering</h3>
+            <div class="entry-where"><span>Indian Institute of Technology Kanpur</span><span class="entry-date">Jul 2013 &ndash; Dec 2015</span></div>
+            <p class="entry-blurb">Thesis: <em>Study of the Dependent Typed Language Agda, Proving Natural Number is Commutative Semiring</em><br>Supervisor: Prof. Satyadev Nandakumar &middot; CGPA 7.43 / 10</p>
+          </li>
+          <li>
+            <h3 class="entry-title">B.E., Computer Science and Engineering</h3>
+            <div class="entry-where"><span>Rashtrasant Tukadoji Maharaj Nagpur University</span><span class="entry-date">Jul 2009 &ndash; Jun 2013</span></div>
+            <p class="entry-blurb">75.31%</p>
+          </li>
+        </ul>
+
+        <h2 id="teaching">Teaching Interests</h2>
+        <ul class="chip-list">
+          <li>Programming Languages</li>
+          <li>Data Structures</li>
+          <li>Design and Analysis of Algorithms</li>
+          <li>Operating Systems</li>
+          <li>Database Management Systems</li>
+        </ul>
+
+        <h2 id="projects">Academic Projects</h2>
+        <ul class="entries">
+          <li>
+            <h3 class="entry-title">Live Bus Tracking System using Twitter Bolt and Tweet Automation</h3>
+            <div class="entry-where"><span>Software Architecture (CS654), IIT Kanpur</span><span class="entry-date">2014</span></div>
+            <p class="entry-blurb">An application built on Twitter Bolt to track city buses in real time.</p>
+          </li>
+          <li>
+            <h3 class="entry-title">Triplet Image Matching for the ADS 40 Airborne Digital Sensor</h3>
+            <div class="entry-where"><span>Parallel Algorithms (CS646), IIT Kanpur</span><span class="entry-date">2014</span></div>
+            <p class="entry-blurb">Reconstructing 3D images from airborne digital-sensor imagery with CUDA.</p>
+          </li>
+          <li>
+            <h3 class="entry-title">Movie Recommender and Score Prediction System</h3>
+            <div class="entry-where"><span>Machine Learning (CS771), IIT Kanpur</span><span class="entry-date">2013</span></div>
+            <p class="entry-blurb">On the MovieLens ml-100k dataset, predicting from simple demographics whether a new user will watch a given movie and, if so, the star rating (1&ndash;5) they are likely to give.</p>
+          </li>
+          <li>
+            <h3 class="entry-title">Foreign Body Detection in Ear Images</h3>
+            <div class="entry-where"><span>Multimodal Biometrics, IIT Kanpur</span><span class="entry-date">2013</span></div>
+            <p class="entry-blurb">Detecting unexpected objects in ear images, such as earphones, scarves, hair, or earrings.</p>
+          </li>
+          <li>
+            <h3 class="entry-title">Design and Development of an Efficient Web Crawler</h3>
+            <div class="entry-where"><span>Undergraduate final-year project</span><span class="entry-date">2013</span></div>
+            <p class="entry-blurb">A web crawler that returns more, and more accurate, results than a conventional crawler. Winner of the Best Technical Project Award from Persistent Systems.</p>
+          </li>
+          <li>
+            <h3 class="entry-title">Hotel Management System</h3>
+            <div class="entry-where"><span>Diploma in Software Engineering</span><span class="entry-date">2008</span></div>
+            <p class="entry-blurb">A desktop application that manages the operations of a single hotel.</p>
+          </li>
+        </ul>
+
+        <h2 id="responsibility">Positions of Responsibility</h2>
+        <ul class="entries">
+          <li>
+            <h3 class="entry-title">Member, Student Council, Department of CSE</h3>
+            <div class="entry-where"><span>RGCER, Nagpur &middot; organised guest lectures, workshops, and cultural and technical events</span><span class="entry-date">2010 &ndash; 2011</span></div>
+          </li>
+          <li>
+            <h3 class="entry-title">Head Coordinator, Programming Language Club and GATE Club</h3>
+            <div class="entry-where"><span>RGCER, Nagpur &middot; organised lectures, tests, and discussions</span><span class="entry-date">2010 &ndash; 2012</span></div>
+          </li>
+          <li>
+            <h3 class="entry-title">Organiser, KodoTeK 2.0 and KodoTeK 3.0</h3>
+            <div class="entry-where"><span>National-level ICPC-format programming event, RGCER, Nagpur</span></div>
+          </li>
+        </ul>
+
+        <h2 id="skills">Technical Skills</h2>
+        <ul class="news facts">
+          <li><span class="news-date">Languages</span><span>C, C++, Java, Python</span></li>
+          <li><span class="news-date">Software</span><span>MATLAB, CUDA, LaTeX, Weka</span></li>
+          <li><span class="news-date">Web</span><span>HTML, CSS, XML, JavaScript</span></li>
+          <li><span class="news-date">Databases</span><span>SQL Server</span></li>
         </ul>
       </section>
 
@@ -275,18 +482,18 @@
       <section class="page content" data-page="misc" aria-labelledby="misc-title">
         <h1 class="page-title" id="misc-title" tabindex="-1">Misc</h1>
         <div class="prose">
-          <h2 id="open-source">Open-source &amp; Repos</h2>
-          <ul class="plain">
-            <li><span class="repo">ts-aluminium-bench</span> <span class="item-note">Benchmark scaffold for aluminium time series (private/dummy)</span></li>
-            <li><span class="repo">fanformer-pytorch</span> <span class="item-note">FANformer experiments (private/dummy)</span></li>
-            <li><span class="repo">pinn-ou-constraints</span> <span class="item-note">Physics-informed mean-reversion constraints (private/dummy)</span></li>
+          <h2 id="contact">How to Reach Me</h2>
+          <p>Please feel free to reach out about research collaborations or guest lectures. The best way to reach me is by email at <a href="mailto:muktinathv@gmail.com"><strong>muktinathv [at] gmail [dot] com</strong></a>. I am also on <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://scholar.google.com/citations?user=fyuVvJgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>, <a href="https://orcid.org/0009-0008-4547-8936" target="_blank" rel="noopener">ORCID</a>, and <a href="https://www.scopus.com/authid/detail.uri?authorId=58884062100" target="_blank" rel="noopener">Scopus</a>.</p>
+
+          <h2 id="memberships">Professional Memberships</h2>
+          <ul>
+            <li>Member, Institute of Electrical and Electronics Engineers (IEEE)</li>
+            <li>Member, Association for Computing Machinery (ACM)</li>
           </ul>
 
-          <h2 id="reading-notes">Reading Notes</h2>
-          <p>Brief notes on TFT gating mechanisms, KAN basis functions, and evaluation pitfalls in multi-step forecasting.</p>
-
-          <h2 id="contact">How to Reach Me</h2>
-          <p>Please reach out if you think we have shared interests. The best way to reach me is via <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+          <h2 id="personal">Outside Research</h2>
+          <p>I enjoy history, puzzle solving, programming, travelling, and photography, and I counsel students on careers.</p>
+          <p>At college I won the Personite personality contest and the Ad-Making Contest at Malhar 2011, and the inter-department cricket tournament and dance competition at Malhar 2013.</p>
         </div>
       </section>
 
@@ -294,7 +501,7 @@
 
     <footer class="site-footer">
       <div class="site-footer-inner">
-        <span>&copy; <span id="year">2026</span> Muktinath Vishwakarma &middot; <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a></span>
+        <span>&copy; <span id="year">2026</span> Muktinath Vishwakarma &middot; <a href="mailto:muktinathv@gmail.com">muktinathv@gmail.com</a></span>
         <button class="theme-toggle" type="button" hidden></button>
       </div>
     </footer>
