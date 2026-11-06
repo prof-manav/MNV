@@ -1,143 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Home — Muktinath Vishwakarma</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Home — summaries of latest research, invited talks, and misc updates by Muktinath Vishwakarma.">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <div class="avatar" aria-hidden="true">MV</div>
-        <div class="brand-text">
-          <span class="name">Muktinath Vishwakarma</span>
-          <span class="role">AI Researcher</span>
-        </div>
-      </a>
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="education.html" class="nav-link">Education</a>
-        <a href="research.html" class="nav-link">Research</a>
-        <a href="talks.html" class="nav-link">Invited Talk</a>
-        <a href="misc.html" class="nav-link">Misc</a>
-      </nav>
-    </div>
-  </header>
-  <main id="home">
-    <section class="section hero">
-      <div class="container grid two-col">
-        <div class="col">
-          <h1>Hello, I'm <span class="accent">Muktinath Vishwakarma</span></h1>
-          <p class="lead">
-            Researcher focusing on <strong>multi-step time series forecasting</strong>, <strong>generative AI</strong>,
-            and <strong>graph learning</strong>. This homepage surfaces quick summaries of my latest work and updates.
-          </p>
-          <div class="cta-row">
-            <a class="btn primary" href="research.html">Explore Research</a>
-            <a class="btn" href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muktinath Vishwakarma</title>
+    <meta name="description" content="Muktinath Vishwakarma is an AI researcher working on multi-step time series forecasting, generative AI, and graph learning.">
+    <meta name="author" content="Muktinath Vishwakarma">
+    <meta property="og:title" content="Muktinath Vishwakarma">
+    <meta property="og:description" content="AI researcher working on multi-step time series forecasting, generative AI, and graph learning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prof-manav.github.io/my-website/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      // Apply the saved theme before first paint (dark unless the visitor chose light).
+      (function () {
+        var root = document.documentElement;
+        var theme;
+        try { theme = localStorage.getItem("theme"); } catch (e) {}
+        root.dataset.theme = theme === "light" ? "light" : "dark";
+        root.classList.add("js");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="#home">Muktinath Vishwakarma</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="#home">Home</a>
+          <a href="#research">Research</a>
+          <a href="#talks">Talks</a>
+          <a href="#education">Education</a>
+          <a href="#misc">Misc</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <!-- ================================================================
+           Home
+           ================================================================ -->
+      <section class="page" data-page="home" aria-label="Home">
+
+        <div class="hero">
+          <aside class="hero-card">
+            <div class="hero-photo" role="img" aria-label="Muktinath Vishwakarma">MV</div>
+            <h1 class="hero-name">Muktinath Vishwakarma</h1>
+            <p class="hero-role">
+              <strong>AI Researcher &middot; Ph.D. Scholar</strong><br>
+              Computer Science &amp; Engineering<br>
+              VNIT Nagpur, India
+            </p>
+            <div class="hero-links">
+              <a class="button primary" href="#research">Research</a>
+              <a class="button" href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="button" href="#talks">Talks</a>
+              <a class="button" href="#contact">Contact</a>
+            </div>
+          </aside>
+
+          <div class="hero-main">
+            <div class="hero-bio">
+              <p class="hero-lead">I work on <strong>multi-step time series forecasting</strong>, <strong>generative AI</strong>, and <strong>graph learning</strong>, with a focus on forecasts that stay stable over long horizons.</p>
+              <p>My models combine frequency-domain priors, recurrent and Transformer encoders, and physics-informed constraints, and I test them on aluminium and other commodity price series. I also work on anomaly detection and retrieval-augmented generation.</p>
+            </div>
+
+            <p class="callout"><strong>Currently</strong> pursuing a Ph.D. in Computer Science, building multi-step forecasting frameworks that fuse Fourier, LSTM, and Transformer modules with physics-informed constraints.</p>
+            <p class="callout red"><strong>Collaboration and talks.</strong> I am happy to hear about research collaborations and speaking invitations. The best way to reach me is on <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+            <details class="toggle bio-toggle">
+              <summary>Brief bio</summary>
+              <div class="toggle-body">
+                <p>Muktinath Vishwakarma is an AI researcher and Ph.D. scholar in Computer Science and Engineering at VNIT Nagpur, India. The research centres on multi-step forecasting: multi-scale fusion Transformers, Fourier&ndash;LSTM hybrids with direct multi-output heads, and Ornstein&ndash;Uhlenbeck mean-reversion priors that curb drift at long horizons, benchmarked on aluminium and multi-metal price panels.</p>
+                <p>Other interests include Temporal Fusion Transformers, Kolmogorov&ndash;Arnold networks, graph neural networks, anomaly detection, and retrieval-augmented generation for legal documents.</p>
+              </div>
+            </details>
           </div>
+
+          <button class="scroll-cue" type="button" data-target="research-themes" aria-label="Scroll to Core Research Themes">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
         </div>
-        <div class="col">
-          <div class="card hero-card">
-            <ul class="quickfacts">
-              <li><span>Interests:</span> MSF, TFT, KAN, PINNs, GNNs, RAG</li>
-              <li><span>Methods:</span> PyTorch, Darts, Optuna, VAR/ARIMA</li>
-              <li><span>Keywords:</span> Aluminium, commodities, anomaly detection</li>
-              <li><span>Location:</span> India</li>
+
+        <!-- Core research themes -->
+        <div class="section" id="research-themes" style="margin-top: 48px;">
+          <h2 class="section-label">Core Research Themes</h2>
+          <ol class="themes">
+            <li>
+              <h3>Multi-Scale and Frequency-Aware Forecasting</h3>
+              <p>Fusing frequency-domain priors with hierarchical temporal encoders and direct multi-output heads, so that long-horizon forecasts accumulate less error. This covers <a href="#msf-transformer">MSF-Transformer</a> and <a href="#fanformer">FANformer</a>.</p>
+            </li>
+            <li>
+              <h3>Physics-Informed Constraints</h3>
+              <p>Injecting Ornstein&ndash;Uhlenbeck mean-reversion priors into deep sequence models to regularise long-horizon drift in commodity price series (<a href="#pinn-ou">details</a>).</p>
+            </li>
+            <li>
+              <h3>Anomaly Detection in Time Series</h3>
+              <p>Organising statistical, machine-learning, and Transformer-based detectors by setting: univariate or multivariate, streaming or batch, reconstruction or prediction (<a href="#anomaly-detection">survey</a>).</p>
+            </li>
+          </ol>
+
+          <button class="scroll-cue" type="button" data-target="latest" aria-label="Scroll to Latest Updates">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+
+        <!-- Latest updates -->
+        <div class="section" id="latest">
+          <h2 class="section-label">Latest Updates</h2>
+          <ul class="news">
+            <li><span class="news-label">Research</span><span><a href="#msf-transformer">MSF-Transformer</a>: multi-scale fusion with frequency-domain priors for aluminium price forecasting, compared against TFT and VAR. Preprint in draft.</span></li>
+            <li><span class="news-label">Research</span><span><a href="#fanformer">FANformer</a>: learnable frequency filters fused with stacked LSTMs and direct multi-output heads, benchmarked on aluminium and multi-metal panels. Working paper.</span></li>
+            <li><span class="news-label">Research</span><span><a href="#pinn-ou">Physics-informed mean reversion</a>: OU-based regularisation that curbs long-horizon drift in commodity prices. In preparation.</span></li>
+            <li><span class="news-label">Talk</span><span><a href="#fdp-genai">Generative AI for Faculty Development</a>: Transformers, Hugging Face workflows, prompt safety, and evaluation in classrooms.</span></li>
+            <li><span class="news-label">Talk</span><span><a href="#temporal-commodity">Temporal Models for Commodity Markets</a>: direct multi-step strategies, error&ndash;horizon trade-offs, and practical benchmarking.</span></li>
+          </ul>
+
+          <details class="toggle news-older">
+            <summary>More updates</summary>
+            <ul class="news">
+              <li><span class="news-label">Talk</span><span><a href="#rag-legal">RAG Systems for Legal Document Retrieval</a>: ANN indexing (Annoy/FAISS), recall@K optimisation, and citation-aware re-ranking.</span></li>
+              <li><span class="news-label">Notes</span><span><a href="#reading-notes">Reading notes on TFT and KAN</a>: Temporal Fusion Transformer internals and KAN operators for interpretable nonlinearity.</span></li>
+              <li><span class="news-label">Code</span><span><a href="#open-source">Open-source scaffolds</a> for aluminium time series benchmarks and FANformer experiments.</span></li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+          </details>
 
-    <!-- Summaries: Research -->
-    <section class="section alt">
-      <div class="container">
-        <h2>Latest in Research</h2>
-        <div class="card-list">
-          <article class="card">
-            <h3><a href="research.html#msf-transformer">MSF-Transformer: Multi-Scale Fusion for Aluminium</a></h3>
-            <p class="muted">Preprint (draft) · 20XX</p>
-            <p>Frequency-domain priors + hierarchical temporal encoding improve long-horizon stability. Direct MIMO heads compared against TFT and VAR.</p>
-          </article>
-          <article class="card">
-            <h3><a href="research.html#fanformer">FANformer: Fourier + LSTM for Long-Range Forecasting</a></h3>
-            <p class="muted">Working paper · 20XX</p>
-            <p>Learnable frequency filters fused with stacked LSTM and direct multi-output heads. Benchmarked on aluminium and multimetal panels.</p>
-          </article>
-          <article class="card">
-            <h3><a href="research.html#pinn-ou">Physics-Informed Mean-Reversion</a></h3>
-            <p class="muted">In preparation · 20XX</p>
-            <p>OU-based regularization curbs drift in long horizons for commodity price series.</p>
-          </article>
+          <button class="scroll-cue" type="button" data-target="at-a-glance" aria-label="Scroll to At a Glance">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
         </div>
-        <div class="more-link"><a class="btn" href="research.html">View all research</a></div>
-      </div>
-    </section>
 
-    <!-- Summaries: Invited Talks -->
-    <section class="section">
-      <div class="container">
-        <h2>Recent Invited Talks</h2>
-        <div class="card-list">
-          <article class="card">
-            <h3><a href="talks.html#fdp-genai">Generative AI for Faculty Development</a></h3>
-            <p class="muted">FDP Session · 20XX</p>
-            <p>Transformers, Hugging Face workflows, prompt safety, and evaluation in classrooms.</p>
-          </article>
-          <article class="card">
-            <h3><a href="talks.html#temporal-commodity">Temporal Models for Commodity Markets</a></h3>
-            <p class="muted">Seminar · 20XX</p>
-            <p>Direct multi-step strategies, error-horizon trade-offs, and practical benchmarking.</p>
-          </article>
-          <article class="card">
-            <h3><a href="talks.html#rag-legal">RAG Systems for Legal Document Retrieval</a></h3>
-            <p class="muted">Workshop · 20XX</p>
-            <p>ANN indexing (Annoy/FAISS), recall@K optimization, and citation-aware re-ranking.</p>
-          </article>
+        <!-- At a glance -->
+        <div class="section" id="at-a-glance">
+          <h2 class="section-label">At a Glance</h2>
+          <ul class="news facts">
+            <li><span class="news-label">Interests</span><span>Multi-step forecasting, Temporal Fusion Transformers, KAN, PINNs, GNNs, RAG</span></li>
+            <li><span class="news-label">Methods</span><span>PyTorch, Darts, Optuna, VAR/ARIMA</span></li>
+            <li><span class="news-label">Domains</span><span>Aluminium and commodity prices, anomaly detection</span></li>
+            <li><span class="news-label">Location</span><span>Nagpur, India</span></li>
+          </ul>
         </div>
-        <div class="more-link"><a class="btn" href="talks.html">View all talks</a></div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Summaries: Misc -->
-    <section class="section alt">
-      <div class="container">
-        <h2>From the Misc Desk</h2>
-        <div class="card-list">
-          <article class="card">
-            <h3><a href="misc.html#open-source">Open-source & Repos</a></h3>
-            <p class="muted">Updates · 20XX</p>
-            <p>Tracking internal scaffolds for aluminium time series benchmarks and FANformer experiments.</p>
-          </article>
-          <article class="card">
-            <h3><a href="misc.html#reading-notes">Reading Notes: TFT & KAN</a></h3>
-            <p class="muted">Notes · 20XX</p>
-            <p>Concise notes on Temporal Fusion Transformer internals and KAN operators for interpretable nonlinearity.</p>
-          </article>
-          <article class="card">
-            <h3><a href="misc.html#contact">Contact</a></h3>
-            <p class="muted">Info</p>
-            <p>Reach me on LinkedIn for collaboration and speaking opportunities.</p>
-          </article>
+      <!-- ================================================================
+           Research
+           ================================================================ -->
+      <section class="page" data-page="research" aria-labelledby="research-title">
+        <h1 class="page-title" id="research-title" tabindex="-1">Research</h1>
+
+        <div class="pubs">
+          <h2>Papers and Preprints</h2>
+          <ul>
+            <li id="msf-transformer">
+              <div class="pub-title">MSF-Transformer: A Multi-Scale Fusion Transformer for Multi-Step Forecasting of Aluminium Prices</div>
+              <div class="pub-meta"><span class="pub-venue">Preprint (draft)</span><span class="pub-venue">20XX</span></div>
+              <div class="pub-blurb">A multi-scale fusion backbone that blends frequency-domain priors with hierarchical temporal encoders to stabilise long-horizon predictions and reduce error accumulation.</div>
+              <ul class="pub-tags"><li>Transformer</li><li>Fourier</li><li>Time Series</li><li>MIMO</li></ul>
+              <div class="pub-links">
+                <!-- Paste a URL between the quotes. An empty link shows as "soon" and can't be clicked. -->
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="fanformer">
+              <div class="pub-title">FANformer: A Unified Fourier and LSTM-based Framework for Long-Range Forecasting</div>
+              <div class="pub-meta"><span class="pub-venue">Working paper</span><span class="pub-venue">20XX</span></div>
+              <div class="pub-blurb">Combines learnable frequency filters with LSTM temporal blocks and direct multi-output heads, benchmarked against VAR/ARIMA, TFT, and Darts baselines.</div>
+              <ul class="pub-tags"><li>LSTM</li><li>Fourier</li><li>Direct MIMO</li></ul>
+              <div class="pub-links">
+                <!-- Paste a URL between the quotes. An empty link shows as "soon" and can't be clicked. -->
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+            <li id="pinn-ou">
+              <div class="pub-title">Physics-Informed Forecasting with Mean-Reversion Constraints</div>
+              <div class="pub-meta"><span class="pub-venue">In preparation</span><span class="pub-venue">20XX</span></div>
+              <div class="pub-blurb">Injects Ornstein&ndash;Uhlenbeck priors into deep sequence models to regularise long-horizon drift, improving stability on aluminium price series.</div>
+              <ul class="pub-tags"><li>PINN</li><li>OU Process</li><li>Stability</li></ul>
+              <div class="pub-links">
+                <!-- Paste a URL between the quotes. An empty link shows as "soon" and can't be clicked. -->
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+          </ul>
+
+          <h2>Surveys</h2>
+          <ul>
+            <li id="anomaly-detection">
+              <div class="pub-title">Anomaly Detection in Time Series: A Comprehensive Review</div>
+              <div class="pub-meta"><span class="pub-venue">Survey (draft)</span><span class="pub-venue">20XX</span></div>
+              <div class="pub-blurb">A taxonomy of statistical, machine-learning, and Transformer-based anomaly detectors: univariate vs. multivariate, streaming vs. batch, and reconstruction vs. predictive paradigms.</div>
+              <ul class="pub-tags"><li>Survey</li><li>Anomaly Detection</li></ul>
+              <div class="pub-links">
+                <!-- Paste a URL between the quotes. An empty link shows as "soon" and can't be clicked. -->
+                <a class="pub-link paper" href="">Paper</a>
+                <a class="pub-link code" href="">Code</a>
+                <a class="pub-link data" href="">Data</a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="more-link"><a class="btn" href="misc.html">See more</a></div>
+      </section>
+
+      <!-- ================================================================
+           Talks
+           ================================================================ -->
+      <section class="page" data-page="talks" aria-labelledby="talks-title">
+        <h1 class="page-title" id="talks-title" tabindex="-1">Invited Talks</h1>
+        <ul class="entries">
+          <li id="fdp-genai">
+            <h2 class="entry-title">Generative AI for Faculty Development</h2>
+            <div class="entry-where"><span>FDP Session &middot; IIT/Institute, India</span><span class="entry-date">20XX</span></div>
+            <p class="entry-blurb">Introduced transformer tooling, Hugging Face workflows, safety considerations, and hands-on demos.</p>
+          </li>
+          <li id="temporal-commodity">
+            <h2 class="entry-title">Temporal Models for Commodity Markets</h2>
+            <div class="entry-where"><span>Seminar &middot; University/Industry Lab</span><span class="entry-date">20XX</span></div>
+            <p class="entry-blurb">Covered direct multi-step strategies, horizon-wise error patterns, and empirical benchmarking with Optuna.</p>
+          </li>
+          <li id="rag-legal">
+            <h2 class="entry-title">RAG Systems for Legal Document Retrieval</h2>
+            <div class="entry-where"><span>Workshop &middot; Tech Meetup</span><span class="entry-date">20XX</span></div>
+            <p class="entry-blurb">Demonstrated ANN indexing (Annoy/FAISS), recall@K optimisation, and citation-aware re-ranking.</p>
+          </li>
+          <li id="dl-review">
+            <h2 class="entry-title">Deep Learning for Time Series: From LSTMs to Transformers</h2>
+            <div class="entry-where"><span>Guest Lecture</span><span class="entry-date">20XX</span></div>
+            <p class="entry-blurb">A survey of architectures with their pros and cons, dataset curation, and robust evaluation protocols.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ================================================================
+           Education
+           ================================================================ -->
+      <section class="page" data-page="education" aria-labelledby="education-title">
+        <h1 class="page-title" id="education-title" tabindex="-1">Education</h1>
+        <ul class="entries">
+          <li id="phd">
+            <h2 class="entry-title">Ph.D. in Computer Science (Ongoing)</h2>
+            <div class="entry-where"><span>Focus: Time Series Forecasting, Generative AI</span><span class="entry-date">20XX&ndash;Present</span></div>
+            <p class="entry-blurb">Exploring multi-step forecasting frameworks that fuse Fourier, LSTM, and Transformer modules with physics-informed constraints.</p>
+          </li>
+          <li id="masters">
+            <h2 class="entry-title">M.Tech / M.S. in Computer Science</h2>
+            <div class="entry-where"><span>Specialisation: Machine Learning</span><span class="entry-date">20XX</span></div>
+            <p class="entry-blurb">Thesis on deep sequence models for financial time series; coursework in deep learning, NLP, and advanced algorithms.</p>
+          </li>
+          <li id="btech">
+            <h2 class="entry-title">B.Tech in Computer Science</h2>
+            <div class="entry-where"><span>Undergraduate research: Forecasting &amp; Data Mining</span><span class="entry-date">20XX</span></div>
+            <p class="entry-blurb">Built early forecasting pipelines and dashboards for metal prices and macro indicators.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ================================================================
+           Misc
+           ================================================================ -->
+      <section class="page content" data-page="misc" aria-labelledby="misc-title">
+        <h1 class="page-title" id="misc-title" tabindex="-1">Misc</h1>
+        <div class="prose">
+          <h2 id="open-source">Open-source &amp; Repos</h2>
+          <ul class="plain">
+            <li><span class="repo">ts-aluminium-bench</span> <span class="item-note">Benchmark scaffold for aluminium time series (private/dummy)</span></li>
+            <li><span class="repo">fanformer-pytorch</span> <span class="item-note">FANformer experiments (private/dummy)</span></li>
+            <li><span class="repo">pinn-ou-constraints</span> <span class="item-note">Physics-informed mean-reversion constraints (private/dummy)</span></li>
+          </ul>
+
+          <h2 id="reading-notes">Reading Notes</h2>
+          <p>Brief notes on TFT gating mechanisms, KAN basis functions, and evaluation pitfalls in multi-step forecasting.</p>
+
+          <h2 id="contact">How to Reach Me</h2>
+          <p>Please reach out if you think we have shared interests. The best way to reach me is via <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <span>&copy; <span id="year">2026</span> Muktinath Vishwakarma &middot; <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a></span>
+        <button class="theme-toggle" type="button" hidden></button>
       </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Muktinath Vishwakarma</span>
-      <span class="sep">·</span>
-      <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
-</body>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
 </html>

@@ -1,77 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Research — Muktinath Vishwakarma</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Research papers, preprints, and projects by Muktinath Vishwakarma.">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <div class="avatar" aria-hidden="true">MV</div>
-        <div class="brand-text">
-          <span class="name">Muktinath Vishwakarma</span>
-          <span class="role">AI Researcher</span>
-        </div>
-      </a>
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="education.html" class="nav-link">Education</a>
-        <a href="research.html" class="nav-link">Research</a>
-        <a href="talks.html" class="nav-link">Invited Talk</a>
-        <a href="misc.html" class="nav-link">Misc</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="section">
-      <div class="container">
-        <h1>Research</h1>
-        <div class="card-list">
-          <article class="card" id="msf-transformer">
-            <h2>MSF-Transformer: A Multi-Scale Fusion Transformer for Multi-Step Forecasting of Aluminium Prices</h2>
-            <p class="muted">Preprint (draft) · 20XX</p>
-            <p>Proposes a multi-scale fusion backbone blending frequency-domain priors with hierarchical temporal encoders to stabilize long-horizon predictions and reduce error accumulation.</p>
-            <ul class="tags"><li>Transformer</li><li>Fourier</li><li>Time Series</li><li>MIMO</li></ul>
-          </article>
-
-          <article class="card" id="fanformer">
-            <h2>FANformer: A Unified Fourier and LSTM-based Framework for Long-Range Forecasting</h2>
-            <p class="muted">Working paper · 20XX</p>
-            <p>Combines learnable frequency filters with LSTM temporal blocks and direct multi-output heads; benchmarks vs. VAR/ARIMA, TFT, and Darts baselines.</p>
-            <ul class="tags"><li>LSTM</li><li>Fourier</li><li>Direct MIMO</li></ul>
-          </article>
-
-          <article class="card" id="pinn-ou">
-            <h2>Physics-Informed Forecasting with Mean-Reversion Constraints</h2>
-            <p class="muted">In preparation · 20XX</p>
-            <p>Injects Ornstein–Uhlenbeck priors into deep sequence models to regularize long-horizon drift, improving stability on aluminium price series.</p>
-            <ul class="tags"><li>PINN</li><li>OU Process</li><li>Stability</li></ul>
-          </article>
-
-          <article class="card" id="anomaly-detection">
-            <h2>Anomaly Detection in Time Series: A Comprehensive Review</h2>
-            <p class="muted">Survey (draft) · 20XX</p>
-            <p>Taxonomy of statistical, ML, and transformer-based anomaly detectors; univariate vs. multivariate, streaming vs. batch, reconstruction vs. predictive paradigms.</p>
-            <ul class="tags"><li>Survey</li><li>Anomaly Detection</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Muktinath Vishwakarma</span>
-      <span class="sep">·</span>
-      <a href="https://www.linkedin.com/in/muktinathv/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research — Muktinath Vishwakarma</title>
+    <link rel="canonical" href="index.html#research">
+    <meta http-equiv="refresh" content="0; url=index.html#research">
+    <script>
+      // The site is now a single page; keep old links (including #anchors) working.
+      location.replace("index.html" + (location.hash || "#research"));
+    </script>
+  </head>
+  <body style="margin:0;padding:32px 18px;background:#15181B;color:#E6E6E1;font-family:system-ui,sans-serif;">
+    <p>This page has moved to <a href="index.html#research" style="color:#7FB2D3;">index.html#research</a>.</p>
+  </body>
 </html>
